@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+}
+
+body {
+  background: #020617;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Particle Canvas */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero span {
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+.typing {
+  color: #00ffff;
+  margin: 10px 0;
+}
+
+/* Buttons */
+.btns a {
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background: cyan;
+  color: black;
+  border-radius: 5px;
+}
+
+.btns .outline {
+  background: transparent;
+  border: 1px solid cyan;
+  color: cyan;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: cyan;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.skills-grid div {
+  padding: 20px;
+  background: #0f172a;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.skills-grid div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px cyan;
+}
+
+/* Cards */
+.card {
+  margin: 15px;
+  padding: 20px;
+  background: #0f172a;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px cyan;
+}
